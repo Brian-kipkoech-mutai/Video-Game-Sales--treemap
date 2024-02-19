@@ -1,0 +1,73 @@
+ 
+ .ui{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 150vh;
+    
+     
+ } 
+ 
+ 
+
+.viewbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color:rgb(0, 174, 255); */
+     
+    width: 80%;
+    height: 100%;
+   min-height: 100vh;
+    
+    
+
+}
+#tooltip{
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.8); /*  background color with transparency */
+    color: white; /*  white for better contrast */
+    border: 1px solid #ddd;  
+    border-radius: 5px;  
+    padding: 8px; 
+    width:fit-content;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out; /* transition for opacity */
+    font-size: 20px;
+    line-height: 1.5
+  }
+  .title{
+    color:black;
+    font-size:3rem;
+    margin-bottom: 10px;
+     
+}
+ .decription{
+   font-size: 1.3rem;
+   margin-bottom: 20px;
+ }
+
+ @media screen and (max-width: 768px) {
+   .title {
+       font-size: 2.5rem;
+   }
+
+   .description {
+       font-size: 1.1rem;
+   }
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 576px) {
+   .title {
+       font-size: 2rem;
+   }
+
+   .description {
+       font-size: 0.8rem;
+   }
+}
+
+

@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Map Diagram</title>
+    <link rel="stylesheet" href="style.css"> <!-- link to  css stylesheet -->
+ </head>
+ <body class="ui">
+    <div class="viewbox">
+         <div class="datasetLink">Source: <a href="https://cdn.freecodecamp.org/testable-projects-fcc/data/tree_map/video-game-sales-data.json"> Video Game Sales Data (JSON)</a></div>
+        <div class="title" id="title">Video Game Sales</div>
+        <div class="decription" id="description">Top 100 Most Sold Video Games Grouped by Platform</div>
+        <svg id="svg"></svg>
+           <svg id="legend"></svg>
+        <div id="tooltip"></div>
+    </div>
+       <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> <!-- test script -->
+    <script src="https://d3js.org/d3.v6.min.js"></script> <!-- link to d3 library -->
+    <script src="script.js"></script> <!-- link to script.js file -->
+ </body>
+ </html>
